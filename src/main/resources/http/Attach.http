@@ -1,0 +1,23 @@
+
+POST http://localhost:8080/api/v1/attach/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="photo_2023-03-30_07-05-49.jpg"
+
+< C:\Users\lenovo\Desktop\test\photo_2023-03-30_07-05-49.jpg
+
+
+### Get image load
+GET http://localhost:8080/api/v1/attach/open/47e77e08-8eaa-4921-a9cf-918fac4b2e79
+
+
+### Get pagination
+GET http://localhost:8080/api/v1/attach/pagination
+
+
+### Download
+GET http://localhost:8080/api/v1/attach/download/241f3dbc-457f-4b1f-9f90-a7a82f00de35
+
+### Delete
+DELETE http://localhost:8080/api/v1/attach/closed/delete/0da8d648-0d27-4de3-8503-8fe5a84b7a2f

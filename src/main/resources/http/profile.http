@@ -1,0 +1,62 @@
+
+### Create profile
+POST http://localhost:8080/api/v1/profile/closed
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1MjM4MDYsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA2MTAyMDYsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ.9HHAXKM60rEp818-qsNS-B2U60zryeM3VA2BerXYeX9B1_Sq2E5dlSHuafRNzq3rlYIRt2PPO5-_eGwQI_uVEw
+
+{
+  "name": "Publisher",
+  "surname": "GFD",
+  "email": "ulGFi@gmaol.com",
+  "phone": "+998901234500",
+  "password": "000",
+  "status": "ACTIVE",
+  "role": "PUBLISHER"
+}
+
+### Update profile
+PUT http://localhost:8080/api/v1/profile/closed/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0NzYzNzMsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA1NjI3NzMsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ.pTx_dA30O9hRlf1iQ55OEnFULAPsu6uB6RVzZDVb4CshxP2g5b2YccSIhuu8q4ebb_M-nMjhghzesjOb5LKPqg
+
+{
+  "name": "GFDS",
+  "surname": "HGFD",
+  "email": "publishGFi@gmaol.com",
+  "phone": "+998901234597",
+  "password": "1236",
+  "status": "ACTIVE",
+  "role": "PUBLISHER"
+}
+
+
+### Update detail any
+PUT http://localhost:8080/api/v1/profile/closed/detail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0NTcxNzksImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA0NjQzNzksImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ.1V9SQAyuSt5MrZWFi2u_ykPzX3QFjvglw3Qjsq9i7h-gQCxZsOvSoknfi-zmb_woqVL0CZ8VQKOZdxGxrqftKg
+
+{
+  "name": "MENMANMEN",
+  "surname": "SEN"
+}
+
+
+### Get all profile
+GET http://localhost:8080/api/v1/profile/closed/all?page=1&size=4
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0NTcxNzksImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA0NjQzNzksImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ.1V9SQAyuSt5MrZWFi2u_ykPzX3QFjvglw3Qjsq9i7h-gQCxZsOvSoknfi-zmb_woqVL0CZ8VQKOZdxGxrqftKg
+
+
+### Delete profile
+DELETE http://localhost:8080/api/v1/profile/closed/5
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0NTcxNzksImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA0NjQzNzksImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ.1V9SQAyuSt5MrZWFi2u_ykPzX3QFjvglw3Qjsq9i7h-gQCxZsOvSoknfi-zmb_woqVL0CZ8VQKOZdxGxrqftKg
+
+
+### Filter
+GET http://localhost:8080/api/v1/profile/filter
+Content-Type: application/json
+
+
+{
+  "createdDateFrom": "2023-07-25",
+  "createdDateTo": "2023-08-08"
+}

@@ -1,0 +1,128 @@
+### Cretae
+POST http://localhost:8080/api/v1/article/closed
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0NzM1NTksImlkIjozLCJyb2xlIjoiTU9ERVJBVE9SIiwiZXhwIjoxNjkwNDgwNzU5LCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.2K1HNoU04A7nN8pi4-ACJ1pw9GT4Qy51F4IjeN7kDwvEiWvh_UMf-WfOxfWXBMS8Qpiur-91hSx-9lbPZU_F9Q
+
+{
+  "title": " ooooo",
+  "description": "hhhoooooooooohhhhhh hhhhhhhhhh hhhhhhhhhhh",
+  "content": "Eshmat toshmat qani. Toshmat eshmatni kormadingmi.jhgf kjhg lkjhg",
+  "regionId": 54,
+  "categoryId": 5,
+  "articleTypes": [1,3,4]
+}
+
+### Update
+PUT  http://localhost:8080/api/v1/article/closed/cea824f6-4b4b-4395-9165-a8a03de07c23
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0NzM1NTksImlkIjozLCJyb2xlIjoiTU9ERVJBVE9SIiwiZXhwIjoxNjkwNDgwNzU5LCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.2K1HNoU04A7nN8pi4-ACJ1pw9GT4Qy51F4IjeN7kDwvEiWvh_UMf-WfOxfWXBMS8Qpiur-91hSx-9lbPZU_F9Q
+
+{
+  "title": " update qilindi",
+  "description": "update qilindi",
+  "content": "Eshmat toshmat qani. Toshmat eshmatni kormadingmi.jhgf kjhg lkjhg",
+  "regionId": 54,
+  "categoryId": 5,
+  "articleTypes": [1,2,3]
+}
+
+### Deleted
+DELETE http://localhost:8080/api/v1/article/closed/cea824f6-4b4b-4395-9165-a8a03de07c23
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0NzM1NTksImlkIjozLCJyb2xlIjoiTU9ERVJBVE9SIiwiZXhwIjoxNjkwNDgwNzU5LCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.2K1HNoU04A7nN8pi4-ACJ1pw9GT4Qy51F4IjeN7kDwvEiWvh_UMf-WfOxfWXBMS8Qpiur-91hSx-9lbPZU_F9Q
+
+
+### Change status
+PUT http://localhost:8080/api/v1/article/closed/publish/6d4f54d6-0103-420e-a3e1-68c7dfe70773?status=PUBLISHED
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1MjM4NzAsImlkIjo2LCJyb2xlIjoiUFVCTElTSEVSIiwiZXhwIjoxNjkwNjEwMjcwLCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.lOCr1oWz0VrAwxXdeIQbmUZEpi613wyIFLzcq5M6Ok8GFr3KfMD9bp7wWxBc_OGziV9NgT44N2HIl4ofhHIwOg
+
+
+### Get by article type last 5
+GET http://localhost:8080/api/v1/article/lastFive?type=1
+
+
+### Get by article type last 3
+GET http://localhost:8080/api/v1/article/lastThree?type=1
+
+
+### Get last 8
+GET http://localhost:8080/api/v1/article/lastEight
+Content-Type: application/json
+
+["369eeecf-4365-4baf-a1ba-77e88082adda","38a9caf3-f9f3-4c91-9900-b59e56f38969"]
+
+
+### Get by id and lan
+GET http://localhost:8080/api/v1/article/369eeecf-4365-4baf-a1ba-77e88082adda/lan?lan=uz
+Content-Type: application/json
+
+
+### Get by id and type except given article id
+GET http://localhost:8080/api/v1/article/lastFour/369eeecf-4365-4baf-a1ba-77e88082adda/type?type=1
+Content-Type: application/json
+
+
+### Get most read article
+GET http://localhost:8080/api/v1/article/mostRead
+
+
+### Get by tag name last 4
+GET http://localhost:8080/api/v1/article/tagName
+
+
+### Get by type and region
+GET http://localhost:8080/api/v1/article/typeAndRegion?type=1&region=53
+
+
+### Get by region pagination
+GET http://localhost:8080/api/v1/article/region/53
+
+
+### Get by category last 5
+GET http://localhost:8080/api/v1/article/lastFive/3
+
+
+
+### Get by category pagination
+GET http://localhost:8080/api/v1/article/category/1
+
+
+
+### Increase view count
+PUT http://localhost:8080/api/v1/article/view/369eeecf-4365-4baf-a1ba-77e88082adda
+
+
+
+
+### Increase shared count
+PUT http://localhost:8080/api/v1/article/shared/369eeecf-4365-4baf-a1ba-77e88082adda
+
+
+### Filter
+GET http://localhost:8080/api/v1/article/filter
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1Mzg1NzEsImlkIjo2LCJyb2xlIjoiUFVCTElTSEVSIiwiZXhwIjoxNjkwNjI0OTcxLCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.gihtFD3-A2ABRqxk9nFeZF3ABumYE0Nlx5UFaO-jb8Y03A1GxuY5q2X-HaOLKy6ZiNgP3sAOhcbpjsJ2eW_5Ag
+
+{
+
+  "createdDateFrom": "2023-07-07",
+  "createdDateTo": "2023-08-08",
+  "status": "NOT_PUBLISHED"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

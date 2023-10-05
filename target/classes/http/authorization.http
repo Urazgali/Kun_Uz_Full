@@ -1,0 +1,29 @@
+### registration
+POST http://localhost:8080/api/v1/auth/registration/
+Content-Type: application/json
+
+{
+  "name": "Alijon",
+  "surname": "Aliyev",
+  "phone": "+998990000011",
+  "password": "123456"
+}
+
+###  Get jwt token // login
+POST http://localhost:8080/api/v1/auth/login
+Content-Type: application/json
+
+{
+  "phone": "+998990000000",
+  "password": "123456"
+}
+
+
+###
+GET http://localhost:8080/api/v1/auth/verification/phone
+Content-Type: application/json
+
+{
+  "phone": "+998990000000",
+  "message": "94136"
+}

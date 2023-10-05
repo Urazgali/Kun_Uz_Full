@@ -1,0 +1,11 @@
+### get by email
+GET http://localhost:8080/api/v1/email/history/bbbb@gmail.com
+
+
+### get by date
+GET http://localhost:8080/api/v1/email/history/date?date=2023-07-31
+
+
+### get pagination
+GET http://localhost:8080/api/v1/email/history/admin/page
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA4MDMxNjcsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA4ODk1NjcsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ.6_fZAMbCHQMOi_HDAmAF66ZzwITKAxibxz9gA7i9f-IAa471FqLFGR5MbbHh0OHgG_dyTQ__n8mW1rwPLpRiEQ

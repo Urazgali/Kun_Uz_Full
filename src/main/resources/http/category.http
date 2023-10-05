@@ -1,0 +1,46 @@
+### Create
+POST http://localhost:8080/api/v1/category/admin
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0Njc3NDUsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA0NzQ5NDUsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ._Thp-cY1aEHlFsy5RyGknMVkZsC7Gayg3p8wMi0fUhEWbmRlTp01Ty4BjkXqZIdP3EGLHvNJC3d5VXh8HC6aAw
+
+{
+  "orderNumber": 5,
+  "nameUz": "DFGHJ",
+  "nameEn": "LKJHGF",
+  "nameRu": ".KJHGFDLKJHG"
+
+}
+
+### Update
+PUT http://localhost:8080/api/v1/category/admin/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0Njc3NDUsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA0NzQ5NDUsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ._Thp-cY1aEHlFsy5RyGknMVkZsC7Gayg3p8wMi0fUhEWbmRlTp01Ty4BjkXqZIdP3EGLHvNJC3d5VXh8HC6aAw
+
+{
+  "orderNumber": 4,
+  "nameUz": "Xop boladi",
+  "nameEn": "MuhimEmasEn",
+  "nameRu": "MuhimEmasRu"
+}
+
+### Delete
+DELETE http://localhost:8080/api/v1/category/admin/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0Njc3NDUsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA0NzQ5NDUsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ._Thp-cY1aEHlFsy5RyGknMVkZsC7Gayg3p8wMi0fUhEWbmRlTp01Ty4BjkXqZIdP3EGLHvNJC3d5VXh8HC6aAw
+
+
+### Get all page
+GET http://localhost:8080/api/v1/category/admin/all
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA0Njc3NDUsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA0NzQ5NDUsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ._Thp-cY1aEHlFsy5RyGknMVkZsC7Gayg3p8wMi0fUhEWbmRlTp01Ty4BjkXqZIdP3EGLHvNJC3d5VXh8HC6aAw
+
+
+### Get by lan
+### Get all page
+GET http://localhost:8080/api/v1/category/lan?lan=ru
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+
+### Create
+POST http://localhost:8080/api/v1/comment/closed
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1Mzg1NzEsImlkIjo2LCJyb2xlIjoiUFVCTElTSEVSIiwiZXhwIjoxNjkwNjI0OTcxLCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.gihtFD3-A2ABRqxk9nFeZF3ABumYE0Nlx5UFaO-jb8Y03A1GxuY5q2X-HaOLKy6ZiNgP3sAOhcbpjsJ2eW_5Ag
+
+{
+  "replyId": "c21531ba-ba18-4c9e-bbba-21f82902302d",
+  "content": "ovsar"
+}
+
+### Update
+PUT http://localhost:8080/api/v1/comment/closed/c21531ba-ba18-4c9e-bbba-21f82902302d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1Mzg1NzEsImlkIjo2LCJyb2xlIjoiUFVCTElTSEVSIiwiZXhwIjoxNjkwNjI0OTcxLCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.gihtFD3-A2ABRqxk9nFeZF3ABumYE0Nlx5UFaO-jb8Y03A1GxuY5q2X-HaOLKy6ZiNgP3sAOhcbpjsJ2eW_5Ag
+
+{
+  "content": "dumbul"
+}
+
+### Delete
+DELETE http://localhost:8080/api/v1/comment/closed/c21531ba-ba18-4c9e-bbba-21f82902302d
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1Mzg1NzEsImlkIjo2LCJyb2xlIjoiUFVCTElTSEVSIiwiZXhwIjoxNjkwNjI0OTcxLCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.gihtFD3-A2ABRqxk9nFeZF3ABumYE0Nlx5UFaO-jb8Y03A1GxuY5q2X-HaOLKy6ZiNgP3sAOhcbpjsJ2eW_5Ag
+
+
+### Get comment list
+GET http://localhost:8080/api/v1/comment/getList/38a9caf3-f9f3-4c91-9900-b59e56f38969
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1Mzg1NzEsImlkIjo2LCJyb2xlIjoiUFVCTElTSEVSIiwiZXhwIjoxNjkwNjI0OTcxLCJpc3MiOiJrdW4gdXogdGVzdCBwb3J0YWxpIn0.gihtFD3-A2ABRqxk9nFeZF3ABumYE0Nlx5UFaO-jb8Y03A1GxuY5q2X-HaOLKy6ZiNgP3sAOhcbpjsJ2eW_5Ag
+
+### Get pagination
+GET http://localhost:8080/api/v1/comment/getList/38a9caf3-f9f3-4c91-9900-b59e56f38969
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1NDc0NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA2MzM4NDQsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ.YWRXy2md5d_vozOgJhV7trcC_1y8QdW1IZJvhrE-jauSWcJAOirshD0ZyxOemy2xgqNc3VCGLIj8beOu58ChVA
+
+
+### Get reply id
+GET http://localhost:8080/api/v1/comment/replyList/c21531ba-ba18-4c9e-bbba-21f82902302d
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2OTA1NDc0NDQsImlkIjoxLCJyb2xlIjoiQURNSU4iLCJleHAiOjE2OTA2MzM4NDQsImlzcyI6Imt1biB1eiB0ZXN0IHBvcnRhbGkifQ.YWRXy2md5d_vozOgJhV7trcC_1y8QdW1IZJvhrE-jauSWcJAOirshD0ZyxOemy2xgqNc3VCGLIj8beOu58ChVA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
